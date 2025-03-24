@@ -1,0 +1,31 @@
+import numpy as np
+import pandas as pd
+
+mtcars = pd.read_csv('mtcars.csv')
+
+top5 = mtcars.sort_values(by='mpg', ascending=False).head(5)
+#print(top5)
+
+
+cyl8 = mtcars[mtcars['cyl'] == 8]
+top3=cyl8.sort_values(by='mpg').head(3)
+#print(top3)
+
+cyl6 = mtcars[mtcars['cyl'] == 6]
+srednja = cyl6['mpg'].mean()
+#print(srednja)
+
+cyl4 = mtcars[(mtcars['cyl'] == 4) & (mtcars['wt'] >= 2.0) & (mtcars['wt'] <= 2.2)]
+mean = cyl4['mpg'].mean()
+#print(mean)
+
+manual = mtcars[mtcars['am'] == 1].shape[0]
+automatik = mtcars[mtcars['am'] == 0].shape[0]
+#print(manual)
+#print(automatik)
+
+manual100 = mtcars[(mtcars['am'] == 1) & (mtcars['hp'] > 100)].shape[0]
+#print(manual100)
+
+#masa u kg
+print(mtcars['wt']*1000/2.2)

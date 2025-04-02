@@ -1,0 +1,20 @@
+1. zadatak
+
+a) Pretpostavke imaju smisla jer pri malim količinama CO2 i malom temperaturom kaže da je soba slobodna(osobe ispustaju CO2 i cim ga nema puno govori nam da nema osoba, barem ne puno njih)
+Pri većim temperaturama i većim CO2 prostorija je zauzeta(osobe ispuštaju CO2 i temperatura je veća)
+
+b) Pomocu koda print "(f'Broj podatkovnih primjera: {df.shape[0]}')" imamo 10129 podatkovnih primjera
+
+c) Logistička regresija
+0    8228
+1    1901
+
+
+2. zadatak
+
+a) +
+b) +
+c) pri manjim broj susjeda model postaje osjetljiviji na šum i može dovesti do overfittinga
+pri većim brojem susjeda model postaje glatkiji i otporniji na šum. jer uzima vise susjeda pri donosenju odluka, takoder moze doci do underfittinga.
+d) Značajke s različitim skalama mogu dominirati i KNN neće pravilno interpretirati udaljenosti
+
